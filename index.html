@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Basic HTML Page</title>
+  <style>
+    body {
+      background-image: url('bg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      min-width: 100vw;
+
+      .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 17%;
+
+        .flex-col {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 20px;
+          width: 617px;
+          height: 100vh;
+
+          .top-logo {
+            position: absolute;
+            top: 12px;
+            left: 0px;
+            width: 208px;
+            max-height: 90px;
+            background-color: white;
+            padding: 15px 24px;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            background-color: #FFF9F9B2;
+            border: 1px solid #fff;
+            gap: 12px;
+            border-radius: 14px;
+
+            .txt {
+              font-family: PingFang HK;
+              font-weight: 600;
+              font-size: 26px;
+              line-height: 26px;
+              color: #000;
+              margin: auto 0;
+              ;
+            }
+          }
+
+          h1 {
+            font-family: PingFang HK;
+            font-weight: 600;
+            font-size: 74px;
+            line-height: 74px;
+            color: #333334;
+            margin: 0;
+          }
+
+          p {
+            font-family: PingFang HK;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: #636363;
+          }
+        }
+
+        .download {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 6px;
+
+          .download-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 52px;
+            height: 52px;
+            padding: 4.5px;
+            background-color: #A8D630;
+            border-radius: 6.93px;
+          }
+
+          .download-txt {
+            font-family: PingFang HK;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            width: 52px;
+            color: #000000;
+          }
+        }
+
+        .footer {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 50px;
+          width: 307px;
+          font-family: PingFang HK;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          text-align: center;
+          vertical-align: middle;
+        }
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="flex-col">
+      <div class="top-logo">
+        <img src="logo.png" width="55" height="55">
+        <div class="txt"> BBTalk</div>
+      </div>
+      <h1>BBTalk 欢迎体验</h1>
+      <p>谁都可以轻松开始的聊天</br>
+        多人语音，随时随地都能聚会</p>
+
+      <!-- <a class="download" href="https://apps.apple.com/cn/app/bbtalk/id6443601234" target="_blank">
+        <div class="download-button">
+          <img src="logo.png" width="43.33" height="43.33">
+        </div>
+        <div class="download-txt"> 下载</div>
+      </a>
+      <img src="ios.png" width="72" height="72"> -->
+    </div>
+    <img src="phone.png" width="613" height="828">
+    <div class="footer">
+      Copyright © 2025 BBTalk. All Rights Reserved.
+      BBTalk 版权所有
+    </div>
+  </div>
+</body>
+
+</html>
